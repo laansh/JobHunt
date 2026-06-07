@@ -7,9 +7,10 @@ workflow — into shippable artifacts. It is *not* an instance of the personal j
 it is the place where the publishable version of the workflow is authored, refined, and packaged.
 
 > Naming note: the GitHub repo is `laansh/JobFlow` (renamed from `JobHunt`; GitHub redirects the
-> old URL). The local folder is still `...\Repos\JobHunt` and the remote alias is `origin`. Also,
-> `JobFlow.md` describes an end-user runtime folder layout called `JobHunt/` — that's the user's
-> folders, not this repo. Don't conflate them.
+> old URL) and the remote alias is `origin`. `JobFlow.md` also describes an end-user runtime folder
+> layout called `JobFlow/` — that's the user's folders, not this repo. The only lingering `JobHunt`
+> name is the local working-directory path `...\Repos\JobHunt`, left unrenamed to avoid breaking
+> active sessions.
 
 > Pattern note: this is expected to be the **first of several** sanitized workflows (other goals,
 > other domains) that follow the same shape. So the structure of the artifacts here matters

@@ -46,7 +46,7 @@ Five seeding prompts build the context library from material you upload into ded
 ## Seeding Folders You Set Up
 
 ```
-JobHunt/
+JobFlow/
 ├── Seed/
 │   ├── VoiceSamples/    ← drop emails, blog posts, LinkedIn writing, cover letters here
 │   ├── Resumes/         ← every resume version you want considered, plus a cover template
@@ -58,7 +58,7 @@ Quality of seeding matters. The prompts can only produce a voice guide as good a
 ## What Comes Out of Phase 0
 
 ```
-JobHunt/Context/
+JobFlow/Context/
 ├── about-me.md
 ├── scoring-rubric.md
 ├── voice-and-style.md
@@ -123,7 +123,7 @@ The four pathways at Gate 3 are the heart of the system. Most senior or competit
 One folder per role. The folder name is how the prompts find each other's outputs — don't rename folders manually mid-pipeline.
 
 ```
-JobHunt/Roles/{CompanyName}-{ShortRoleTitle}/    (PascalCase, no spaces)
+JobFlow/Roles/{CompanyName}-{ShortRoleTitle}/    (PascalCase, no spaces)
 ├── JDS.md or JDS.pdf                            (original posting)
 ├── {Company}-EvalLight.md                       (jds-eval-light output)
 ├── JDSEvaluation.docx                           (jds-eval-deep output)
@@ -157,7 +157,7 @@ JobHunt/Roles/{CompanyName}-{ShortRoleTitle}/    (PascalCase, no spaces)
 Each per-role prompt appends a status row to a CSV. The CSV is the prompts' write target; your spreadsheet is the human-facing roll-up. Why split them: spreadsheets in cloud-sync folders get locked while a prompt is writing, and CSV append-only is bulletproof.
 
 ```
-JobHunt/
+JobFlow/
 ├── TrackerPending.csv         (every prompt appends one row)
 ├── OutreachTracker.csv        (connect — one row per contact attempt)
 └── JobSearchStatus.xlsx       (master tracker, reconciled manually)
@@ -216,7 +216,7 @@ These are guardrails worth bolting into the prompts themselves, not just trustin
 ## Full Folder Layout
 
 ```
-JobHunt/
+JobFlow/
 ├── Seed/                                ← Phase 0 inputs (you upload here)
 │   ├── VoiceSamples/
 │   ├── Resumes/

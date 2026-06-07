@@ -6,8 +6,8 @@ and the exact output format. Authored as plain markdown now; portable to Promptl
 
 ## Conventions used by every prompt
 
-- **Context library** lives in `JobHunt/Context/` (built by the seed prompts).
-- **Per-role folders** live in `JobHunt/Roles/{CompanyName}-{ShortRoleTitle}/` (PascalCase, no spaces).
+- **Context library** lives in `JobFlow/Context/` (built by the seed prompts).
+- **Per-role folders** live in `JobFlow/Roles/{CompanyName}-{ShortRoleTitle}/` (PascalCase, no spaces).
   The folder name is the join key — prompts find each other's outputs by it. Never rename mid-pipeline.
 - **Trackers** are append-only CSVs (`TrackerPending.csv`, `OutreachTracker.csv`); the XLSX master is
   reconciled by hand. Prompts append, never rewrite.
