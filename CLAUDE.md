@@ -43,14 +43,20 @@ See [PromptlyJobFlow/JobFlow.md](PromptlyJobFlow/JobFlow.md) for the full spec.
 
 ## The deliverable
 
-Working artifacts (authored as markdown now; portable to PromptlyDo later):
-1. Prompt bodies for each of the ~11 named prompts (5 seeding + 5 per-role + 1 refresh),
-   each self-contained and declaring which Context files it reads / which folder it writes.
-2. A landing page / guide walking a new user through the three phases (esp. Phase 0 setup).
-3. Optional starter Context templates (illustrative, not anyone's real files).
-4. A consistent naming/packaging convention so each prompt is a discrete shareable unit.
+**The product is [`starter-kit/`](starter-kit/)** — what end users download (GitHub "Download ZIP")
+and run. Built and current:
+- `starter-kit/START-HERE.md` — plain-language onboarding; branches by tool tier (A: filesystem,
+  B: project persistence), names specific products, includes a "how to edit .md files" primer.
+- `starter-kit/Prompts/` — the 11 prompt bodies (canonical home, moved here from PromptlyJobFlow)
+  plus `orchestrator.md`, the master "conductor" prompt pasted once per session.
+- `starter-kit/Context/examples/` — illustrative filled-in Context files (fictional persona "Jordan Rivera").
+- `starter-kit/{Seed,Roles,Unevaluated,Archive}/` with per-folder READMEs; empty `TrackerPending.csv` /
+  `OutreachTracker.csv`.
 
-`JobFlow.md` is the *brief*, not the deliverable.
+`PromptlyJobFlow/` holds design docs only: `JobFlow.md` (the spec/brief) and `deploydecision.md`.
+
+Still TODO: a review pass on the prompt bodies; optional `setup.ps1`/`setup.sh`; eventually a GitHub
+Release that zips just `starter-kit/` for a clean download; Tier-C "Chat Mode" (deferred to PromptlyDo).
 
 ## Locked design decisions (do not re-litigate)
 
@@ -90,10 +96,11 @@ Working artifacts (authored as markdown now; portable to PromptlyDo later):
 4. Multi-tool portability — design works in ChatGPT/Cursor/etc., not just Claude; say so.
 5. Companion sanitized prompt bodies are likely the core deliverable for the next round.
 
-## Suggested first move
+## Suggested next move
 
-Confirm delivery format (open question #1), then draft the eleven prompt bodies. Start with the
-five seeding prompts — most novel, most differentiating, and they unlock everything downstream.
+Prompts, orchestrator, starter kit, and START-HERE are built. Next: a review/QA pass on the prompt
+bodies and an end-to-end dry run of the workflow, then optional setup scripts and a Release-zipped
+starter kit. Defer Tier-C "Chat Mode" to PromptlyDo per `deploydecision.md`.
 
 ## Source / privacy
 

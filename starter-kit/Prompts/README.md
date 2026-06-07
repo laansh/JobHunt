@@ -1,18 +1,25 @@
 # JobFlow Prompts
 
-The eleven reusable prompts that drive [JobFlow](../JobFlow.md), grouped by phase. Each file is a
-self-contained prompt body: it declares which Context files it reads, which folder it writes to,
-and the exact output format. Authored as plain markdown now; portable to PromptlyDo later.
+The reusable prompts that drive JobFlow, grouped by phase. Each file is a self-contained prompt body:
+it declares which Context files it reads, which folder it writes to, and the exact output format.
 
-## Conventions used by every prompt
+New here? Start with [../START-HERE.md](../START-HERE.md), then paste [orchestrator.md](orchestrator.md)
+into your assistant — it ties everything below together.
+
+## Conventions every prompt follows
 
 - **Context library** lives in `JobFlow/Context/` (built by the seed prompts).
 - **Per-role folders** live in `JobFlow/Roles/{CompanyName}-{ShortRoleTitle}/` (PascalCase, no spaces).
   The folder name is the join key — prompts find each other's outputs by it. Never rename mid-pipeline.
-- **Trackers** are append-only CSVs (`TrackerPending.csv`, `OutreachTracker.csv`); the XLSX master is
-  reconciled by hand. Prompts append, never rewrite.
+- **Trackers** are append-only CSVs (`TrackerPending.csv`, `OutreachTracker.csv`). Prompts append, never rewrite.
 - **Hard limits:** prompts draft and track only. They never log in, scrape, submit applications, or
   send messages. The human does all sending/submitting. No LinkedIn automation, ever.
+
+## Conductor
+
+| Prompt | Purpose |
+|---|---|
+| [orchestrator](orchestrator.md) | Master prompt — paste once per session; routes you to the right step |
 
 ## Seed (run once — `seed/`)
 
@@ -39,3 +46,6 @@ and the exact output format. Authored as plain markdown now; portable to Promptl
 | Prompt | Reads | Writes |
 |---|---|---|
 | [refresh-context](refresh/refresh-context.md) | `*-observed.md`, `*-gaps.md` | promotes into canonical `Context/` files |
+
+---
+_JobFlow — by Laans Hokanson — github.com/laansh/jobflow — CC BY 4.0_
