@@ -1,4 +1,4 @@
-# JobHunt — PromptlyDo "JobFlow" Artifact Build
+# JobFlow — PromptlyDo Artifact Build
 
 ## What this repo is
 
@@ -6,8 +6,10 @@ This repo is the working home for turning **JobFlow** — a sanitized, portable 
 workflow — into shippable artifacts. It is *not* an instance of the personal job hunt itself;
 it is the place where the publishable version of the workflow is authored, refined, and packaged.
 
-> Naming note: `JobFlow.md` describes a folder layout that is *also* called `JobHunt/`. That
-> is the end-user's runtime folder structure, not this repo. Don't conflate the two.
+> Naming note: the GitHub repo is `laansh/JobFlow` (renamed from `JobHunt`; GitHub redirects the
+> old URL). The local folder is still `...\Repos\JobHunt` and the remote alias is `origin`. Also,
+> `JobFlow.md` describes an end-user runtime folder layout called `JobHunt/` — that's the user's
+> folders, not this repo. Don't conflate them.
 
 > Pattern note: this is expected to be the **first of several** sanitized workflows (other goals,
 > other domains) that follow the same shape. So the structure of the artifacts here matters
