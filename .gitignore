@@ -1,0 +1,6 @@
+# Private working/context-transfer doc — names live job targets; keep out of this PUBLIC repo
+PromptlyJobFlow/progress.md
+
+# OS / editor cruft
+Thumbs.db
+.DS_Store
