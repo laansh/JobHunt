@@ -27,7 +27,9 @@ Location/remote: <…>
 
 ## Instructions
 
-1. Take the JDS (pasted, or a file in `Unevaluated/`). If batch-triaging, process each posting in turn.
+1. Take the JDS — pasted, or a file in `Unevaluated/` (a `.md`/`.txt` of copied text, or a `.pdf`,
+   including PDFs the user printed from LinkedIn or other job boards). If batch-triaging, process every
+   posting in the folder in turn.
 2. Create the role folder `Roles/{Company}-{ShortRoleTitle}/` (PascalCase, no spaces) and save the
    original posting there as `JDS.md`/`JDS.pdf`.
 3. Apply hard gates first: any dealbreaker present or must-have absent → tier **Pass**, stop scoring.
@@ -36,6 +38,15 @@ Location/remote: <…>
 6. Append one row to `TrackerPending.csv`.
 
 Do not do company research, comp research, or pathway analysis here — that's `jds-eval-deep`. Stay light.
+
+## Batch / scheduled use
+
+This prompt is designed to run in bulk against everything in `Unevaluated/`, so the user can drop
+postings throughout the day and triage them all at once. If the tool supports scheduled or automated
+runs (e.g. Claude Code routines/cron, Tier A), point a **nightly** run at `Unevaluated/` — triage then
+happens off-peak and doesn't burn prime-time/interactive tokens. After a scheduled run, move processed
+postings out of `Unevaluated/` (into their new `Roles/` folder, or `Archive/` if passed) so the next
+run only sees new ones.
 
 ## Output format
 
@@ -58,8 +69,8 @@ Do not do company research, comp research, or pathway analysis here — that's `
 <2–3 sentences: pursue and why, or pass and why. If Pursue, recommend running jds-eval-deep.>
 ```
 
-`TrackerPending.csv` row:
+`TrackerPending.csv` row (match the file's header; leave unused fields empty):
 ```
-date,company,role,stage,tier,score,source,folder
-YYYY-MM-DD,{Company},{Role},light-eval,{tier},{score},{source},{folder}
+date,company,role,stage,tier,score,pathway,source,folder
+YYYY-MM-DD,{Company},{Role},light-eval,{tier},{score},,{source},{folder}
 ```

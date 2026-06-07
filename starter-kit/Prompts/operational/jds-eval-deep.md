@@ -46,4 +46,8 @@ Use `voice-and-style.md` only to keep any drafted snippets on-voice; this docume
 6. Risks / watch-outs
 ```
 
-Tracker row: `date,company,role,stage=deep-eval,tier,score,pathway,folder`
+Tracker row (match `TrackerPending.csv` header; leave unused fields empty):
+```
+date,company,role,stage,tier,score,pathway,source,folder
+YYYY-MM-DD,{Company},{Role},deep-eval,{tier},{score},{pathway},,{folder}
+```

@@ -34,4 +34,8 @@ Produce a submission-ready, tailored package. **The human submits** — this pro
 - `Resume-{Company}.docx` — tailored, formatted per the conventions
 - `Cover-{Company}.docx` — one page, value-prop-led, on-voice
 - `Notes.md` — pre-submit flags and any judgment calls you made
-- Tracker row: `date,company,role,stage=application-ready,folder`
+- Tracker row (match `TrackerPending.csv` header; leave unused fields empty):
+  ```
+  date,company,role,stage,tier,score,pathway,source,folder
+  YYYY-MM-DD,{Company},{Role},application-ready,,,,,{folder}
+  ```

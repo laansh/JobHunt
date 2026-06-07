@@ -3,6 +3,10 @@
 A prompt-driven job-hunt workflow you run with an AI assistant, out of a folder on your own computer.
 No app, no account — your data stays with you.
 
+**Works with** any AI tool that can either access a folder on your computer (**Tier A**) or keep a
+project with files you upload (**Tier B**) — including the free tiers of Claude, ChatGPT, and Gemini. A
+plain-chat (**Tier C**) version is underway.
+
 **👉 New here? Open [START-HERE.md](START-HERE.md).** It walks you through setup in plain language.
 
 ## The 30-second version

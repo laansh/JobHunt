@@ -3,6 +3,10 @@
 A prompt-driven **job-hunt workflow** you run with an AI assistant, out of a folder on your own
 computer. No app, no account, no data leaving your machine. Free and open under **CC BY 4.0**.
 
+Works with any AI tool that can access a folder (**Tier A**, e.g. Claude Code/Cursor) or keep an
+uploaded-file project (**Tier B**, e.g. Claude/ChatGPT/Gemini projects). A plain-chat **Tier C** version
+is underway.
+
 ## Are you here to *use* JobFlow?
 
 **Everything you need is in [`starter-kit/`](starter-kit/).** Either:

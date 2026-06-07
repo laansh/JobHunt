@@ -8,6 +8,11 @@ never leave your machine unless you choose to share them.
 This guide gets you from "I just unzipped this" to "I'm running real job postings through it." It's
 written for non-technical users — if you can unzip a file and type into a chat box, you can do this.
 
+> **Who JobFlow is for (current version):** anyone using an AI tool that can either **work in a folder
+> on your computer** (Tier A) or **keep a project with files you upload** (Tier B). Both are covered
+> below, and the free tiers of Claude, ChatGPT, and Gemini all qualify. A simplified **Tier C** version
+> for plain, no-memory chat is **underway** — until it ships, use one of the Tier A or B options.
+
 ---
 
 ## 1. What you just downloaded
@@ -83,8 +88,8 @@ These can't reach into your computer, but they remember files you upload and kee
 You'll do a little more copy-paste than Tier A, but it works well.
 
 > **Only have a plain chat with no projects or file memory (e.g. a free, basic chat)?** JobFlow's
-> simplified "Chat Mode" for that case is coming later. For now, the free tiers of Claude, ChatGPT, and
-> Gemini all include the project features above — using one of those is the easiest path.
+> simplified "Chat Mode" (Tier C) for that case is **underway**. For now, the free tiers of Claude,
+> ChatGPT, and Gemini all include the project features above — using one of those is the easiest path.
 
 ---
 
@@ -116,8 +121,14 @@ Budget a couple of hours. When you're done, `Context/` holds your five files and
 
 When a job catches your eye:
 
-1. **Triage** — drop the posting in `Unevaluated/` (or paste it) and run **`jds-eval-light`**. It scores
-   it against your rubric and says pursue or pass.
+1. **Triage** — capture the posting in `Unevaluated/` and run **`jds-eval-light`**. It scores it against
+   your rubric and says pursue or pass.
+   - *Capturing postings:* paste the text into a `.md` file, or use your browser's **Print → Save as
+     PDF** and drop the PDF in `Unevaluated/` — including **LinkedIn** jobs (save them by hand; JobFlow
+     never logs into LinkedIn). See `Unevaluated/README.md` for details.
+   - *Batch it, ideally overnight:* let postings pile up and triage them together. If your tool can run
+     scheduled tasks (Tier A), set `jds-eval-light` to run **nightly** so triage happens off-peak and
+     doesn't burn your prime-time tokens.
 2. **Go deep** — if it scores well, run **`jds-eval-deep`**. This is the big one: fit analysis, pay
    research, and a **recommended pathway** — apply cold, apply *and* network in parallel, network first,
    or network only.
