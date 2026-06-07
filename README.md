@@ -4,8 +4,8 @@ A prompt-driven **job-hunt workflow** you run with an AI assistant, out of a fol
 computer. No app, no account, no data leaving your machine. Free and open under **CC BY 4.0**.
 
 Works with any AI tool that can access a folder (**Tier A**, e.g. Claude Code/Cursor) or keep an
-uploaded-file project (**Tier B**, e.g. Claude/ChatGPT/Gemini projects). A plain-chat **Tier C** version
-is underway.
+uploaded-file project (**Tier B**, e.g. Claude/ChatGPT/Gemini projects, including their free tiers). A
+plain-chat **Tier C** version is coming via **PromptlyDo**, not this repo.
 
 ## Are you here to *use* JobFlow?
 

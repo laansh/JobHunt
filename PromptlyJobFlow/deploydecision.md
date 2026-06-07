@@ -29,9 +29,10 @@ The skeleton is trivial and identical for everyone. The connection is the whole 
 
 - **Primary product targets Tiers A & B only** ("Project Mode" — the full modular file structure;
   prompts read/write the Context files).
-- **Tier C (stateless "Chat Mode") is DESCOPED** from the primary product but **underway via PromptlyDo**,
-  sequenced after the primary product ships. The consolidated single-`MyContext.md` paste-in idea is the
-  seed of that work. User-facing docs should describe Tier C as "underway."
+- **Tier C (stateless "Chat Mode") is DESCOPED** from the GitHub product and will be **delivered through
+  PromptlyDo, not this repo**, sequenced after the primary product ships. The consolidated
+  single-`MyContext.md` paste-in idea is the seed of that work. User-facing docs should say Tier C is
+  "coming via PromptlyDo."
 - **Lowest-common-denominator user:** can unzip a file and edit markdown in a text editor. We design to
   that floor (no terminal assumed).
 

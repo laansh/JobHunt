@@ -9,9 +9,10 @@ This guide gets you from "I just unzipped this" to "I'm running real job posting
 written for non-technical users — if you can unzip a file and type into a chat box, you can do this.
 
 > **Who JobFlow is for (current version):** anyone using an AI tool that can either **work in a folder
-> on your computer** (Tier A) or **keep a project with files you upload** (Tier B). Both are covered
-> below, and the free tiers of Claude, ChatGPT, and Gemini all qualify. A simplified **Tier C** version
-> for plain, no-memory chat is **underway** — until it ships, use one of the Tier A or B options.
+> on your computer** (Tier A) or **keep a project with files you upload** (Tier B) — both covered below.
+> The free tiers of the major assistants generally work, within their limits (see Tier B). A simplified
+> **Tier C** version for plain, no-memory chat is **coming via PromptlyDo** (not this GitHub download) —
+> until then, use a Tier A or B tool.
 
 ---
 
@@ -73,11 +74,11 @@ That's all — from here on you just tell it what you want ("triage this posting
 interview") and it runs the right prompt and saves the output into the right folder.
 
 ### 🔵 Tier B — your AI keeps a project/workspace with uploaded files
-Tools like **Claude (Projects)**, **ChatGPT (Projects / Custom GPTs)**, or **Google Gemini (Gems)**.
-These can't reach into your computer, but they remember files you upload and keep your conversation.
+Tools like **Claude (Projects)**, **ChatGPT (Projects)**, or **Google Gemini (Gems)**. These can't reach
+into your computer, but they remember files you upload and keep your conversation.
 
 **Setup:**
-1. Create a new Project / Custom GPT / Gem named "JobFlow."
+1. Create a new Project (Claude / ChatGPT) or Gem (Gemini) named "JobFlow."
 2. Upload the contents of `Prompts/` and (once built) your `Context/` files into the project's
    knowledge/files area.
 3. Paste `Prompts/orchestrator.md` (everything below its "paste" line) as the project's instructions
@@ -87,9 +88,14 @@ These can't reach into your computer, but they remember files you upload and kee
 
 You'll do a little more copy-paste than Tier A, but it works well.
 
-> **Only have a plain chat with no projects or file memory (e.g. a free, basic chat)?** JobFlow's
-> simplified "Chat Mode" (Tier C) for that case is **underway**. For now, the free tiers of Claude,
-> ChatGPT, and Gemini all include the project features above — using one of those is the easiest path.
+**On free tiers (as of 2026):** Claude (Projects), ChatGPT (Projects), and Gemini (Gems) all offer a
+usable version of this on their free plans, within limits — roughly ~5 files per project, rate limits,
+and smaller/less-capable models. One gotcha: creating a *custom GPT* in ChatGPT needs a paid plan, but
+free ChatGPT **Projects** work fine. Tiers change often — check your tool's current limits.
+
+> **Only have a plain chat with no projects or file memory (e.g. a free, basic chat)?** A simplified
+> JobFlow "Chat Mode" (**Tier C**) for that case is **coming via PromptlyDo** — it won't be part of this
+> GitHub download. For now, the easiest path is one of the free Tier A/B options above.
 
 ---
 
