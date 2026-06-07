@@ -3,12 +3,22 @@
 ## What this repo is
 
 This repo is the working home for turning **JobFlow** — a sanitized, portable job-hunt
-workflow — into shippable artifacts for **PromptlyDo.com**. It is *not* an instance of the
-personal job hunt itself; it is the place where the publishable version of the workflow is
-authored, refined, and packaged.
+workflow — into shippable artifacts. It is *not* an instance of the personal job hunt itself;
+it is the place where the publishable version of the workflow is authored, refined, and packaged.
 
 > Naming note: `JobFlow.md` describes a folder layout that is *also* called `JobHunt/`. That
 > is the end-user's runtime folder structure, not this repo. Don't conflate the two.
+
+> Pattern note: this is expected to be the **first of several** sanitized workflows (other goals,
+> other domains) that follow the same shape. So the structure of the artifacts here matters
+> beyond this single deliverable — design for reuse.
+
+## Delivery approach (current)
+
+PromptlyDo.com is the eventual publishing target, but it is **pending a bug review**, so for now
+the project proceeds as **plain markdown files in this repo**. Prompt bodies and guides are
+authored as standalone `.md` files; once PromptlyDo is fully available we export/port them into
+that environment. Keep each prompt self-contained so the later export is mechanical.
 
 ## The workflow (one paragraph)
 
@@ -25,14 +35,14 @@ See [PromptlyJobFlow/JobFlow.md](PromptlyJobFlow/JobFlow.md) for the full spec.
 
 ## The deliverable
 
-Working artifacts for PromptlyDo.com — most likely:
+Working artifacts (authored as markdown now; portable to PromptlyDo later):
 1. Prompt bodies for each of the ~11 named prompts (5 seeding + 5 per-role + 1 refresh),
    each self-contained and declaring which Context files it reads / which folder it writes.
 2. A landing page / guide walking a new user through the three phases (esp. Phase 0 setup).
 3. Optional starter Context templates (illustrative, not anyone's real files).
-4. A consistent naming/packaging convention if PromptlyDo treats each prompt as a unit.
+4. A consistent naming/packaging convention so each prompt is a discrete shareable unit.
 
-The two source docs are the *brief*, not the deliverable.
+`JobFlow.md` is the *brief*, not the deliverable.
 
 ## Locked design decisions (do not re-litigate)
 
@@ -65,7 +75,8 @@ The two source docs are the *brief*, not the deliverable.
 
 ## Open questions (confirm before finalizing artifact format)
 
-1. PromptlyDo delivery shape: downloadable bundle, copy-paste prompt cards, or guided web flow?
+1. PromptlyDo delivery shape (deferred): downloadable bundle, copy-paste prompt cards, or guided
+   web flow? Resolve when PromptlyDo's bug review clears; markdown-first until then.
 2. Seeding prompts one-shot or conversational? (Q&A / gap-filling are better multi-turn.)
 3. Licensing posture between Laans and PromptlyDo (attribution, exclusivity, withdrawal rights).
 4. Multi-tool portability — design works in ChatGPT/Cursor/etc., not just Claude; say so.
@@ -79,7 +90,8 @@ five seeding prompts — most novel, most differentiating, and they unlock every
 ## Source / privacy
 
 - [PromptlyJobFlow/JobFlow.md](PromptlyJobFlow/JobFlow.md) — sanitized spec, safe to publish.
-- `PromptlyJobFlow/progress.md` — context-transfer brief; **git-ignored** because it names live
-  job targets. Local reference only; do not commit to this public repo.
+- The original `progress.md` context-transfer brief named live job targets and has been **removed
+  from this repo** after its sanitized, generalizable content was folded into this CLAUDE.md. The
+  private original remains only in Laans's `GETAJOBa/PromptlyJobHunt/` working directory.
 - The original private source (`SkillSuite.md` and the real `.claude/skills/*` under `GETAJOBa/`)
   is **not** imported and must not be re-exposed.
