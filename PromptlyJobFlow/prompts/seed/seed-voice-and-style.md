@@ -1,3 +1,5 @@
+# JobFlow — by Laans Hokanson — github.com/laansh/jobflow — CC BY 4.0
+
 # seed-voice-and-style
 
 - **Phase:** Seed

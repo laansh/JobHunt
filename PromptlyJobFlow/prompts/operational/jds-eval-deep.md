@@ -1,3 +1,5 @@
+# JobFlow — by Laans Hokanson — github.com/laansh/jobflow — CC BY 4.0
+
 # jds-eval-deep
 
 - **Phase:** Run (Gate 2 — Deep Eval, sets up Gate 3 — Pathway)

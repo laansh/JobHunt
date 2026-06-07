@@ -1,3 +1,5 @@
+# JobFlow — by Laans Hokanson — github.com/laansh/jobflow — CC BY 4.0
+
 # connect
 
 - **Phase:** Run (Gate 3 — the network leg: parallel-network, network-first, or network-only)

@@ -1,3 +1,5 @@
+# JobFlow — by Laans Hokanson — github.com/laansh/jobflow — CC BY 4.0
+
 # seed-scoring-rubric
 
 - **Phase:** Seed

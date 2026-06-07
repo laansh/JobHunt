@@ -23,6 +23,11 @@ the project proceeds as **plain markdown files in this repo**. Prompt bodies and
 authored as standalone `.md` files; once PromptlyDo is fully available we export/port them into
 that environment. Keep each prompt self-contained so the later export is mechanical.
 
+See [PromptlyJobFlow/deploydecision.md](PromptlyJobFlow/deploydecision.md) for how the primary
+product reaches end users: a downloadable starter kit targeting Tiers A & B (filesystem / project
+persistence). Tier C (stateless chat) is descoped from the primary product and deferred to PromptlyDo
+post-launch. All prompts/artifacts carry a `JobFlow — CC BY 4.0` banner.
+
 ## The workflow (one paragraph)
 
 A job seeker uploads existing material (resumes, writing samples, project docs) into seeding
