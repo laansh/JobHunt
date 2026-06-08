@@ -11,9 +11,10 @@ plain-chat **Tier C** version is coming via **PromptlyDo**, not this repo.
 
 **Everything you need is in [`starter-kit/`](starter-kit/).** Either:
 
-- **Download it:** click **Code → Download ZIP** above, unzip, and open
-  [`starter-kit/START-HERE.md`](starter-kit/START-HERE.md); or
-- **Browse it** starting at [`starter-kit/START-HERE.md`](starter-kit/START-HERE.md).
+- **Download it (recommended):** get the `JobFlow-starter-kit` zip from the
+  [latest release](https://github.com/laansh/JobFlow/releases/latest), unzip to get a ready-to-use
+  `JobFlow/` folder, and open `START-HERE.md` inside it; or
+- **Browse it** here, starting at [`starter-kit/START-HERE.md`](starter-kit/START-HERE.md).
 
 That guide explains setup in plain language for any AI tool, technical or not.
 
