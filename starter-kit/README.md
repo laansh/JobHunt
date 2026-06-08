@@ -31,6 +31,7 @@ the above for you.
 | `Unevaluated/` | Inbox for new postings to triage |
 | `Archive/` | Finished or passed-on jobs |
 | `TrackerPending.csv`, `OutreachTracker.csv` | Append-only logs (open in Excel/Sheets) |
+| `setup.ps1` / `setup.sh` | *Optional* one-command scaffolder (Windows / macOS-Linux) for terminal users |
 
 ## Ground rules
 

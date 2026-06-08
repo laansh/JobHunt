@@ -55,8 +55,9 @@ and run. Built and current:
 
 `PromptlyJobFlow/` holds design docs only: `JobFlow.md` (the spec/brief) and `deploydecision.md`.
 
-Still TODO: a review pass on the prompt bodies; optional `setup.ps1`/`setup.sh`; eventually a GitHub
-Release that zips just `starter-kit/` for a clean download; Tier-C "Chat Mode" (deferred to PromptlyDo).
+Built: optional `starter-kit/setup.ps1` + `setup.sh` (copy the kit into a fresh `JobFlow/` working
+folder); and a GitHub Release zipping just `starter-kit/` (top-level `JobFlow/` dir) for a clean
+download. Still TODO: end-to-end live dry run; Tier-C "Chat Mode" (delivered via PromptlyDo, not here).
 
 ## Locked design decisions (do not re-litigate)
 

@@ -35,6 +35,10 @@ JobFlow/
 Put this `JobFlow/` folder somewhere you'll find it — your Documents folder, or a cloud drive like
 OneDrive, Google Drive, iCloud, or Dropbox so it's backed up.
 
+> *Comfortable with a terminal?* Optional one-command setup scripts are included — `setup.ps1`
+> (Windows) and `setup.sh` (macOS/Linux) — that copy this kit into a fresh `JobFlow/` working folder.
+> Most people don't need them; just use the folder you unzipped.
+
 ---
 
 ## 2. How to open and edit the `.md` files
