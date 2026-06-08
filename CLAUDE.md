@@ -23,7 +23,7 @@ the project proceeds as **plain markdown files in this repo**. Prompt bodies and
 authored as standalone `.md` files; once PromptlyDo is fully available we export/port them into
 that environment. Keep each prompt self-contained so the later export is mechanical.
 
-See [PromptlyJobFlow/deploydecision.md](PromptlyJobFlow/deploydecision.md) for how the primary
+See [docs/deploydecision.md](docs/deploydecision.md) for how the primary
 product reaches end users: a downloadable starter kit targeting Tiers A & B (filesystem / project
 persistence). Tier C (stateless chat) is descoped from the primary product and deferred to PromptlyDo
 post-launch. All prompts/artifacts carry a `JobFlow — CC BY 4.0` banner.
@@ -39,7 +39,7 @@ folders. Five **seeding prompts** analyze that material into a five-file **Conte
 accumulate observed companies, network paths, and gap notes; a monthly `refresh-context`
 prompt promotes those into the canonical Context files. Three phases: **Seed → Run → Refresh**.
 
-See [PromptlyJobFlow/JobFlow.md](PromptlyJobFlow/JobFlow.md) for the full spec.
+See [docs/JobFlow.md](docs/JobFlow.md) for the full spec.
 
 ## The deliverable
 
@@ -47,13 +47,13 @@ See [PromptlyJobFlow/JobFlow.md](PromptlyJobFlow/JobFlow.md) for the full spec.
 and run. Built and current:
 - `starter-kit/START-HERE.md` — plain-language onboarding; branches by tool tier (A: filesystem,
   B: project persistence), names specific products, includes a "how to edit .md files" primer.
-- `starter-kit/Prompts/` — the 11 prompt bodies (canonical home, moved here from PromptlyJobFlow)
-  plus `orchestrator.md`, the master "conductor" prompt pasted once per session.
+- `starter-kit/Prompts/` — the 11 prompt bodies (canonical home) plus `orchestrator.md`,
+  the master "conductor" prompt pasted once per session.
 - `starter-kit/Context/examples/` — illustrative filled-in Context files (fictional persona "Jordan Rivera").
 - `starter-kit/{Seed,Roles,Unevaluated,Archive}/` with per-folder READMEs; empty `TrackerPending.csv` /
   `OutreachTracker.csv`.
 
-`PromptlyJobFlow/` holds design docs only: `JobFlow.md` (the spec/brief) and `deploydecision.md`.
+`docs/` holds design docs only: `JobFlow.md` (the spec/brief) and `deploydecision.md`.
 
 Built: optional `starter-kit/setup.ps1` + `setup.sh` (copy the kit into a fresh `JobFlow/` working
 folder); and a GitHub Release zipping just `starter-kit/` (top-level `JobFlow/` dir) for a clean
@@ -105,7 +105,7 @@ starter kit. Defer Tier-C "Chat Mode" to PromptlyDo per `deploydecision.md`.
 
 ## Source / privacy
 
-- [PromptlyJobFlow/JobFlow.md](PromptlyJobFlow/JobFlow.md) — sanitized spec, safe to publish.
+- [docs/JobFlow.md](docs/JobFlow.md) — sanitized spec, safe to publish.
 - The original `progress.md` context-transfer brief named live job targets and has been **removed
   from this repo** after its sanitized, generalizable content was folded into this CLAUDE.md. The
   private original remains only in Laans's `GETAJOBa/PromptlyJobHunt/` working directory.

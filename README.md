@@ -33,7 +33,7 @@ JobFlow drafts and tracks; **you** submit and send. It never logs into or messag
 | Path | What it is |
 |---|---|
 | [`starter-kit/`](starter-kit/) | **The product** — what end users download and run |
-| [`PromptlyJobFlow/`](PromptlyJobFlow/) | Design docs: the spec (`JobFlow.md`) and the deployment decision |
+| [`docs/`](docs/) | Design docs: the spec ([`JobFlow.md`](docs/JobFlow.md)) and the deployment decision |
 | `CLAUDE.md` | Notes for contributors working on this repo |
 | `LICENSE` | CC BY 4.0 |
 
